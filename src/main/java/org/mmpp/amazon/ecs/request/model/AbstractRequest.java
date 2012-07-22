@@ -5,8 +5,21 @@ import java.util.Date;
 public abstract class AbstractRequest {
 
 	private Operation _operation = null;
-	private AmazonAccessAccount _amazonAccessAccount;
 	private Date _timestamp;
+	private AccessCertificate _accessCertificate;
+	private AffiliateAccount _affiateAccount;
+	public void setAccessCertificate(AccessCertificate accessCertificate) {
+		_accessCertificate = accessCertificate;
+	}
+	public AccessCertificate getAccessCertificate(){
+		return _accessCertificate;
+	}
+	public void setAffiliateAccount(AffiliateAccount affiateAccount) {
+		_affiateAccount = affiateAccount;
+	}
+	public AffiliateAccount getAffiliateAccount(){
+		return _affiateAccount;
+	}
 	public void setOperation(Operation operation){
 		_operation = operation;
 	}
@@ -14,14 +27,6 @@ public abstract class AbstractRequest {
 		return _operation;
 	}
 	
-	
-	public void setAmazonAccessAccount(AmazonAccessAccount amazonAccessAccount) {
-		_amazonAccessAccount = amazonAccessAccount;
-	}
-
-	public AmazonAccessAccount getAmazonAccessAccount(){
-		return _amazonAccessAccount;
-	}
 	public void setTimestamp(Date timestamp) {
 		_timestamp = timestamp;
 	}
