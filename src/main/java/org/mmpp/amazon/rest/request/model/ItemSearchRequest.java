@@ -1,4 +1,4 @@
-package org.mmpp.amazon.ecs.request.model;
+package org.mmpp.amazon.rest.request.model;
 
 public class ItemSearchRequest extends AbstractRequest{
 	private SearchIndex _searchIndex;

@@ -3,10 +3,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.mmpp.amazon</groupId>
+  <groupId>org.mmpp.amazon.rest</groupId>
   <version>1.0.0</version>
   <artifactId>request-model</artifactId>
-  <name>Amazon Web Service Request Model</name>
+  <name>Amazon Web Service REST Request Model</name>
 	<build>
     	<plugins>
 			<plugin>
